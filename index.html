@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Chen - Principal Solutions Architect</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Set default font to Inter and apply smooth scrolling */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        :root {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for a sleek look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1f2937; /* Dark track */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4b5563; /* Grey thumb */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6b7280;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#3b82f6', /* Blue 500 */
+                        'secondary': '#1f2937', /* Dark Grey/Blue */
+                        'accent': '#facc15', /* Amber for highlights */
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#hero" class="text-2xl font-extrabold text-primary tracking-wider rounded-md transition duration-300">
+                    S. CHEN
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#summary" class="text-gray-300 hover:text-primary transition duration-300 px-3 py-2 rounded-md font-medium">Profile</a>
+                    <a href="#expertise" class="text-gray-300 hover:text-primary transition duration-300 px-3 py-2 rounded-md font-medium">Expertise</a>
+                    <a href="#experience" class="text-gray-300 hover:text-primary transition duration-300 px-3 py-2 rounded-md font-medium">Experience</a>
+                    <a href="#contact" class="text-white bg-primary hover:bg-blue-600 transition duration-300 px-4 py-2 rounded-full font-semibold shadow-lg">Contact</a>
+                </nav>
+                <!-- Mobile Menu Button (Hamburger) -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <a href="#summary" class="block px-4 py-2 text-base font-medium text-gray-300 hover:bg-gray-800 hover:text-primary transition duration-300">Profile</a>
+            <a href="#expertise" class="block px-4 py-2 text-base font-medium text-gray-300 hover:bg-gray-800 hover:text-primary transition duration-300">Expertise</a>
+            <a href="#experience" class="block px-4 py-2 text-base font-medium text-gray-300 hover:bg-gray-800 hover:text-primary transition duration-300">Experience</a>
+            <a href="#contact" class="block px-4 py-3 text-base font-medium text-white bg-primary hover:bg-blue-600 transition duration-300">Contact Now</a>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="hero" class="relative overflow-hidden pt-24 pb-32 md:pt-40 md:pb-48 bg-gray-800">
+        <!-- Background Abstract Pattern -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#1f2937_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <span class="text-primary font-bold text-lg uppercase tracking-widest block mb-4">The Next-Generation Architect</span>
+                <h1 class="text-5xl sm:text-7xl font-extrabold leading-tight tracking-tight">
+                    SARAH CHEN
+                </h1>
+                <p class="text-3xl sm:text-4xl font-light text-accent mt-4 mb-8">
+                    Principal Solutions Architect
+                </p>
+                <p class="text-gray-300 text-xl max-w-2xl">
+                    Driving **digital transformation** through strategic cloud adoption, scalable microservices, and pragmatic technical governance across global enterprises.
+                </p>
+                <div class="mt-10 flex space-x-4">
+                    <a href="#expertise" class="px-8 py-3 bg-primary text-white text-lg font-semibold rounded-full hover:bg-blue-600 transition duration-300 transform hover:scale-105 shadow-xl">
+                        View Core Expertise
+                    </a>
+                    <a href="#experience" class="px-8 py-3 text-primary border border-primary text-lg font-semibold rounded-full hover:bg-primary/10 transition duration-300 transform hover:scale-105">
+                        Success Stories
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Summary / The Architect's Vision -->
+    <section id="summary" class="py-20 md:py-28 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">The Vision</h2>
+            <div class="bg-gray-800 p-8 sm:p-12 rounded-2xl shadow-2xl border border-gray-700">
+                <blockquote class="text-center italic text-xl sm:text-2xl text-gray-300 leading-relaxed">
+                    "My role is to bridge the gap between business strategy and technical reality. I specialize in designing **resilient, cost-optimized, and future-proof systems** that leverage serverless and event-driven patterns to maximize agility and minimize technical debt. Successful architecture is not just about technology—it's about enabling high-performing teams."
+                </blockquote>
+                <div class="mt-8 text-center text-primary font-semibold text-lg">
+                    — Sarah Chen, PSA
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Core Expertise/Skills -->
+    <section id="expertise" class="py-20 md:py-28 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white">Core Expertise Domains</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Skill Card 1: Cloud & DevOps -->
+                <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700 hover:shadow-primary/50 transition duration-300 transform hover:-translate-y-1">
+                    <svg class="w-10 h-10 text-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7-4h14"></path></svg>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Cloud & Infrastructure</h3>
+                    <ul class="text-gray-400 space-y-2 text-sm">
+                        <li>AWS (Certified SA Pro) & Azure</li>
+                        <li>Serverless Architecture (Lambda, Fargate)</li>
+                        <li>Infrastructure as Code (Terraform, CloudFormation)</li>
+                        <li>Kubernetes (EKS/AKS)</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 2: Architecture Patterns -->
+                <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700 hover:shadow-primary/50 transition duration-300 transform hover:-translate-y-1">
+                    <svg class="w-10 h-10 text-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Architecture Design</h3>
+                    <ul class="text-gray-400 space-y-2 text-sm">
+                        <li>Microservices & Bounded Contexts</li>
+                        <li>Event-Driven Architecture (Kafka, SQS/SNS)</li>
+                        <li>Domain-Driven Design (DDD)</li>
+                        <li>API Gateway & Service Mesh (Istio)</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 3: Programming & Data -->
+                <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700 hover:shadow-primary/50 transition duration-300 transform hover:-translate-y-1">
+                    <svg class="w-10 h-10 text-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Programming & Data</h3>
+                    <ul class="text-gray-400 space-y-2 text-sm">
+                        <li>Expert in Python & Golang</li>
+                        <li>Java/Spring Boot and Node.js</li>
+                        <li>Polyglot Persistence (NoSQL/SQL)</li>
+                        <li>Big Data Pipelines (Spark, Databricks)</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 4: Governance & Strategy -->
+                <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700 hover:shadow-primary/50 transition duration-300 transform hover:-translate-y-1">
+                    <svg class="w-10 h-10 text-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Governance & Metrics</h3>
+                    <ul class="text-gray-400 space-y-2 text-sm">
+                        <li>TCO & FinOps Optimization</li>
+                        <li>Technical Roadmap Definition</li>
+                        <li>System Resilience (Chaos Engineering)</li>
+                        <li>DORA Metrics Implementation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Key Experience / Case Studies -->
+    <section id="experience" class="py-20 md:py-28 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white">Key Architectural Achievements</h2>
+            <div class="space-y-12">
+                <!-- Achievement 1 -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border-t-4 border-primary/70">
+                    <p class="text-sm font-semibold text-primary uppercase mb-2">Case Study 1: Global E-commerce Platform Re-platforming</p>
+                    <h3 class="text-3xl font-bold mb-4 text-white">Cloud-Native Microservices Migration</h3>
+                    <p class="text-gray-300 mb-4">
+                        Led the architectural strategy and execution for migrating a legacy monolithic application (processing $5B in annual transactions) to a **100% cloud-native, serverless microservices architecture** on AWS.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400 ml-4 space-y-2">
+                        <li>**Result:** Reduced operational costs by **35%** (FinOps) and decreased latency for core transaction APIs by 60%.</li>
+                        <li>**Technology:** AWS Lambda, DynamoDB, API Gateway, SQS, Terraform, Go.</li>
+                        <li>**Impact:** Achieved a 99.99% uptime SLA and enabled feature deployment velocity to increase by 4x.</li>
+                    </ul>
+                </div>
+                <!-- Achievement 2 -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border-t-4 border-accent/70">
+                    <p class="text-sm font-semibold text-accent uppercase mb-2">Case Study 2: Real-Time Data Intelligence System</p>
+                    <h3 class="text-3xl font-bold mb-4 text-white">Event-Driven Big Data Lake Design</h3>
+                    <p class="text-gray-300 mb-4">
+                        Designed and governed a real-time data ingestion and processing pipeline using an Event-Driven Architecture (EDA) to support multi-terabyte analytics for predictive modeling.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400 ml-4 space-y-2">
+                        <li>**Result:** Integrated 15 disparate data sources, enabling **near-real-time business intelligence** reports that previously took 24 hours.</li>
+                        <li>**Technology:** Apache Kafka, Azure Event Hubs, Databricks/Spark, Python, Azure Kubernetes Service (AKS).</li>
+                        <li>**Impact:** Drove a 12% improvement in marketing campaign targeting accuracy through immediate data feedback.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-28 bg-gray-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4 text-white">Let's Architect the Future</h2>
+            <p class="text-gray-300 text-xl mb-10">
+                Ready to discuss your next technical challenge? Connect with me directly.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">
+                <div class="p-6 bg-gray-900 rounded-xl border border-gray-700 shadow-md">
+                    <p class="text-primary font-bold">Email</p>
+                    <p class="text-white mt-1">sarah.chen.arch@email.com</p>
+                </div>
+                <div class="p-6 bg-gray-900 rounded-xl border border-gray-700 shadow-md">
+                    <p class="text-primary font-bold">LinkedIn</p>
+                    <p class="text-white mt-1">/in/sarahchen-psa</p>
+                </div>
+            </div>
+            <!-- Simple Contact Form Mockup -->
+            <form action="#" method="POST" class="mt-12 bg-gray-900 p-8 rounded-xl shadow-2xl border border-gray-700">
+                <div class="space-y-6">
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Your Name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-primary focus:border-primary transition duration-200" required>
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Your Work Email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-primary focus:border-primary transition duration-200" required>
+                    </div>
+                    <div>
+                        <textarea name="message" id="message" rows="4" placeholder="How can I help you architect your solution?" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-primary focus:border-primary transition duration-200" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full sm:w-auto px-10 py-3 bg-accent text-gray-900 text-lg font-bold rounded-full hover:bg-yellow-500 transition duration-300 transform hover:scale-[1.02] shadow-xl">
+                            Send Inquiry
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            &copy; 2024 Sarah Chen, Principal Solutions Architect. All Rights Reserved.
+        </div>
+    </footer>
+    <!-- JavaScript for Mobile Menu Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            // Close menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
