@@ -212,34 +212,25 @@
                 <!-- Skill Card 2: Architecture Patterns -->
                 <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700 hover:shadow-primary/50 transition duration-300 transform hover:-translate-y-1">
                     <svg class="w-10 h-10 text-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                    <h3 class="text-2xl font-semibold mb-3 text-white">Architecture</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Continuous Synchronization (The Cutover)</h3>
                     <ul class="text-gray-400 space-y-2 text-sm">
-                        <li>Microservices, RESTful APIs, SOA across GCP, AWS, and Azure</li>
-                        <li>Ant/Gradle its Scalability and Flexibility</li>
-                        <li>Kubernetes for container orchestration (GCP, AWS, Azure)</li>
-                        <li>Reengineer Applications by refactoring (Updating dependencies/Optimizing performance) </li>
+                        <li>Implement Change Data Capture (CDC) to stream real-time changes from the mainframe VSAM files to the new PostgreSQL database. This allows the legacy system to remain operational while the new environment is being prepared and validated.
                     </ul>
                 </div>
                 <!-- Skill Card 3: Programming & Data -->
                 <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700 hover:shadow-primary/50 transition duration-300 transform hover:-translate-y-1">
                     <svg class="w-10 h-10 text-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                    <h3 class="text-2xl font-semibold mb-3 text-white">Programming & Data</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Data Quality</h3>
                     <ul class="text-gray-400 space-y-2 text-sm">
-                        <li>Expert in Python & Golang</li>
-                        <li>Java/Spring Boot and Node.js</li>
-                        <li>Polyglot Persistence (NoSQL/SQL)</li>
-                        <li>Big Data Pipelines (Spark, Databricks)</li>
+                        <li>Implement a Data Watchdog process—a custom Java or script-based utility—to monitor the data streams, flag anomalies, and ensure data integrity and consistency between the source and target systems throughout the CDC phase.</li>
                     </ul>
                 </div>
                 <!-- Skill Card 4: Governance & Strategy -->
                 <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700 hover:shadow-primary/50 transition duration-300 transform hover:-translate-y-1">
                     <svg class="w-10 h-10 text-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    <h3 class="text-2xl font-semibold mb-3 text-white">Governance & Metrics</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Data Masking/h3>
                     <ul class="text-gray-400 space-y-2 text-sm">
-                        <li>TCO & FinOps Optimization</li>
-                        <li>Technical Roadmap Definition</li>
-                        <li>System Resilience (Chaos Engineering)</li>
-                        <li>DORA Metrics Implementation</li>
+                        <li>For non-production environments (SIT, UAT, Dev), implement Data Masking techniques on sensitive data (e.g., PII, financial details) during the data transfer process to ensure compliance with privacy regulations (a key concern for the CISO).</li>
                     </ul>
                 </div>
             </div>
