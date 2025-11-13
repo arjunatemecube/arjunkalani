@@ -22,9 +22,5 @@ lint:
     - prettier@3.6.2
     - trufflehog@3.90.13
 actions:
-  disabled:
-    - trunk-announce
-    - trunk-check-pre-push
-    - trunk-fmt-pre-commit
   enabled:
     - trunk-upgrade-available
