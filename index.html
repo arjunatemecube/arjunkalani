@@ -248,9 +248,16 @@
                       <p class="text-gray-300 mb-4"><b>Data at Rest/In Transit:</b> Ensure encryption for data at rest (AWS RDS encryption) and in transit (HTTPS for all RESTful APIs).
                       </p>
             </div>
-            <h2 class="text-4xl font-bold text-center mb-16 text-white">Security & Non-Functional Requirements (NFRs)</h2>
-            <p class="text-gray-300 mb-4"><b>Performance:</b> Define clear performance targets (e.g., API response times, batch job execution windows) that match or improve on the mainframe.</p>
-			
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border-t-4 border-accent/70">
+
+                      <h3 class="text-3xl font-bold mb-4 text-white">Non-Functional Requirements (NFRs)</h3>
+                      <p class="text-gray-300 mb-4"><b>Performance:</b> Define clear performance targets (e.g., API response times, batch job execution windows) that match or improve on the mainframe.
+                      </p>
+                      <p class="text-gray-300 mb-4"><b>Scalability:</b> Leverage the cloud's elasticity (e.g., auto-scaling Java Microservices, AWS RDS read replicas) to handle peak loads far exceeding the mainframe's capacity.
+                      </p>
+                      <p class="text-gray-300 mb-4"><b>Disaster Recovery (DR):</b> Implement a robust DR strategy leveraging AWS features like multi-AZ deployment for AWS RDS and automated failover for Microservices, far surpassing traditional mainframe DR plans.
+                      </p>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Skill Card 1: Cloud & DevOps -->
                <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700 hover:shadow-primary/50 transition duration-300 transform hover:-translate-y-1">
