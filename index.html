@@ -236,6 +236,58 @@
             </div>
         </div>
     </section>
+        <!-- Core Expertise/Skills -->
+    <section id="expertise" class="py-20 md:py-28 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white">Security & Non-Functional Requirements (NFRs)</h2>
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border-t-4 border-accent/70">
+                      <p class="text-sm font-semibold text-accent uppercase mb-2">The Principal Solution Architect must ensure the new platform meets or exceeds the mainframe's legendary reliability and security.</p>
+                      <h3 class="text-3xl font-bold mb-4 text-white">Security (CISO)</h3>
+                      <p class="text-gray-300 mb-4"><b>Authentication & Authorization:</b> The new login page must use modern standards (OAuth 2.0/OIDC) for user authentication. Authorization (e.g., checking user privileges for a specific 'location' or Microservice) will be integrated with the Microservices security context. The CISO must approve all security architecture.
+                      </p>
+                      <p class="text-gray-300 mb-4"><b>Data at Rest/In Transit:</b> Ensure encryption for data at rest (AWS RDS encryption) and in transit (HTTPS for all RESTful APIs).
+                      </p>
+                      <p class="text-gray-300 mb-4"><b>Data at Rest/In Transit:</b> Ensure encryption for data at rest (AWS RDS encryption) and in transit (HTTPS for all RESTful APIs).
+                      </p>
+            </div>
+			
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Skill Card 1: Cloud & DevOps -->
+               <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700 hover:shadow-primary/50 transition duration-300 transform hover:-translate-y-1">
+                    <svg class="w-10 h-10 text-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Initial Load</h3>
+                    <ul class="text-gray-400 space-y-2 text-sm">
+                        <li>Extract the complete VSAM data to an intermediate format (e.g., flat files or object storage), perform necessary data type conversions, and load it into PostgreSQL.</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 2: Architecture Patterns -->
+                <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700 hover:shadow-primary/50 transition duration-300 transform hover:-translate-y-1">
+                    <svg class="w-10 h-10 text-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Continuous Synchronization (The Cutover)</h3>
+                    <ul class="text-gray-400 space-y-2 text-sm">
+                        <li>Implement Change Data Capture (CDC) to stream real-time changes from the mainframe VSAM files to the new PostgreSQL database. This allows the legacy system to remain operational while the new environment is being prepared and validated.
+                    </ul>
+                </div>
+                <!-- Skill Card 3: Programming & Data -->
+                <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700 hover:shadow-primary/50 transition duration-300 transform hover:-translate-y-1">
+                    <svg class="w-10 h-10 text-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Data Quality</h3>
+                    <ul class="text-gray-400 space-y-2 text-sm">
+                        <li>Implement a Data Watchdog process—a custom Java or script-based utility—to monitor the data streams, flag anomalies, and ensure data integrity and consistency between the source and target systems throughout the CDC phase.</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 4: Governance & Strategy -->
+                <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700 hover:shadow-primary/50 transition duration-300 transform hover:-translate-y-1">
+                    <svg class="w-10 h-10 text-accent mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Data Masking</h3>
+                    <ul class="text-gray-400 space-y-2 text-sm">
+                        <li>For non-production environments (SIT, UAT, Dev), implement Data Masking techniques on sensitive data (e.g., PII, financial details) during the data transfer process to ensure compliance with privacy regulations (a key concern for the CISO).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Core Expertise/Skills -->
     <section id="expertise" class="py-20 md:py-28 bg-gray-800">
 	
